@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>AgroTech — Tecnologia & Agronegócio</title>
+  <meta name="description" content="Soluções e tecnologia para o agronegócio sustentável.">
+  <meta name="keywords" content="agronegócio, tecnologia agrícola, consultoria rural, insumos">
+  <meta name="author" content="AgroTech">
+
+  <link rel="icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="img/logo.png" alt="AgroTech">
+      </div>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menu">☰</button>
+    </nav>
+  </header>
+
+  <section id="hero" role="region" aria-label="Destaque principal">
+    <div class="container hero-content">
+      <div class="carousel" aria-roledescription="slides" aria-label="Carrossel de imagens" tabindex="0">
+        <img src="img/carousel-1.jpg" alt="Plantação ao amanhecer" class="active" loading="lazy">
+        <img src="img/carousel-2.jpg" alt="Operador com maquinário" loading="lazy">
+        <img src="img/carousel-3.jpg" alt="Equipe no campo" loading="lazy">
+        <div class="carousel-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Tecnologia a serviço do campo</h1>
+        <p>Consultoria agrícola, distribuição de insumos e soluções tecnológicas sustentáveis.</p>
+
+        <!-- NOVO BLOCO DE BOTÕES -->
+        <div class="hero-ctas">
+          <a href="#contato" class="btn">Fale Conosco</a>
+          <a href="#produtos" class="btn">Conheça nossos produtos</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre a Empresa</h2>
+      <p>A <strong>AgroTech</strong> nasceu para conectar tecnologia e campo, promovendo produtividade e sustentabilidade.</p>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Consultoria Agrícola</h3>
+          <p>Planos de manejo e recomendações técnicas personalizadas.</p>
+        </div>
+        <div class="card">
+          <h3>Distribuição de Insumos</h3>
+          <p>Fornecimento de sementes, fertilizantes e ferramentas.</p>
+        </div>
+        <div class="card">
+          <h3>Tecnologia Rural</h3>
+          <p>Monitoramento via satélite e automação agrícola.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <div class="container">
+      <h2>Produtos</h2>
+      <div class="gallery">
+        <img src="img/produto-1.jpg" alt="Produto 1">
+        <img src="img/produto-2.jpg" alt="Produto 2">
+        <img src="img/produto-3.jpg" alt="Produto 3">
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <div class="container">
+      <h2>Depoimentos</h2>
+      <blockquote>“Com a AgroTech aumentamos nossa produtividade em 20%.” — Produtor Ali Awala</blockquote>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <form id="form-contato" action="https://formspree.io/f/xeovjvyy" method="POST">
+        <input type="hidden" name="_subject" value="Novo contato - AgroTech">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="ano"></span> AgroTech. Todos os direitos reservados. | 
+      <a href="docs/politica.html">Política de Privacidade</a></p>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite">
+    <p>Usamos cookies para melhorar sua experiência. <a href="docs/politica.html">Saiba mais</a></p>
+    <button id="aceitar-cookies">Aceitar</button>
+  </div>
+
+  <div id="toast" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
